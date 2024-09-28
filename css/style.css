@@ -1,0 +1,122 @@
+/* Reset de margens e espaçamentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo base para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  min-height: 4rem;
+  background-color: #015810;
+  font-size: 1.5rem;
+}
+
+/*Tamanho da logo */
+
+.logo {
+  width: 185px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Estilização do botão */
+
+button {
+    padding: .3rem;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1.3px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: 300ms;
+}
+  
+button:hover {
+    transform: scale(1.1);
+    background-color: #07881c;
+}
+  
+.botao {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+h1{
+    text-align: center;
+    background-color: #0000002c;
+}
+/* Estilos do container das categorias */
+
+.container-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #0000002c;
+    gap: 20px;
+}
+
+/* Estilos dos itens individuais das categorias */
+.item-categoria {
+    text-align: center;
+    margin: 10px;
+}
+
+/* Estilos das imagens das categorias */
+.item-categoria img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilos dos textos das categorias */
+.item-categoria p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Estilização do rodapé */
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+  }
