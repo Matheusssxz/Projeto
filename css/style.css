@@ -19,30 +19,28 @@ header{
   align-items: center;
   font-family: Arial, sans-serif;
   min-height: 4rem;
-  background-color: #015810;
+  background-color: #23b5d3;
   font-size: 1.5rem;
 }
 
 /*Tamanho da logo */
 
 .logo {
-  width: 185px;
+  width: 125px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0px;
-}
-
-nav ul li{
-    display: inline;
+/* Estilização de Catálogo e Contato*/
+h1{
     margin: 0 40px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    display: inline;
+    font-size: 25px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
+h2{text-align: center;
+
 }
 
 /* Estilização do botão */
@@ -52,16 +50,16 @@ button {
     border-radius: 5px;
     font-size: .9rem;
     font-weight: 600;
-    background-color: transparent;
+    background-color: black;
     border: 1.3px solid #fff;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     transition: 300ms;
 }
   
 button:hover {
     transform: scale(1.1);
-    background-color: #07881c;
+    background-color: #000000b2;
 }
   
 .botao {
@@ -71,7 +69,7 @@ button:hover {
 }
 
 
-h1{
+h3{
     text-align: center;
     background-color: #0000002c;
 }
@@ -85,14 +83,88 @@ h1{
     gap: 20px;
 }
 
-/* Estilos dos itens individuais das categorias */
-.item-categoria {
+/* Estilos dos itens individuais das Categorias*/
+.item-feminino {
     text-align: center;
     margin: 10px;
 }
 
+.item-masculino {
+    text-align: center;
+    margin: 10px;
+}
+
+.item-infantil{
+    text-align: center;
+    margin: 10px;
+}
+
+.item-esportivo{
+    text-align: center;
+    margin: 10px;
+}
+
+.item-calcados{
+    text-align: center;
+    margin: 10px;
+}
+
+.item-acessorios{
+    text-align: center;
+    margin: 10px;
+}
+
+.item-pets{
+    text-align: center;
+    margin: 10px;
+}
+
+
 /* Estilos das imagens das categorias */
-.item-categoria img {
+
+.item-feminino img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-masculino img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-infantil img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-esportivo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-calcados img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-acessorios img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-pets img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -100,10 +172,11 @@ h1{
 }
 
 /* Estilos dos textos das categorias */
-.item-categoria p {
+.item-feminino,.item-masculino,.item-infantil,.item-esportivo,.item-calcados,.item-acessorios,.item-pets p {
     margin-top: 10px;
     font-size: 14px;
     color: #000000;
+    font-weight: bold;
 }
 
 /* Estilização do rodapé */
