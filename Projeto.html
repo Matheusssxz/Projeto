@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outifit</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
     <header>
+
         <!--Criação do "Topo da Página"-->
-        <img src= "logo/logo.png" class="logo">
-            
+
+
+        <img src="logo/logo.png" class="logo">
+
         <div class="search-box">
             <input type="text" class="search-txt" placeholder="Pesquisar">
             <a href="#" class="search-btn">
                 <img src="figuras/lupa.svg" alt="Lupa" height="20" width="20">
             </a>
         </div>
-        
-        
-        <h1 href="#Catálogo" >Catálogo</h1>
-        <h1 href="#Contato">Contato</h1>
-    
-    
+
+        <div class="catalogo-e-contato"">
+            
+            <div>
+                <img src=" figuras/caixa.png" alt="Catálogo" height="40" width="40">
+            <a href="#">Catálogo</a>
+        </div>
+
+        <div>
+            <img src="figuras/fone.png" alt="Contatos" height="40" width="40">
+            <a href="#">Contatos</a>
+        </div>
+
+        </div>
+
         <!-- Criação do Botão-->
         <div class="botao">
             <button class="botaop">Cadastrar</button>
             <button class="botaop">Entrar</button>
         </div>
-    
+
     </header>
 
     <!--Espaçamento-->
@@ -39,72 +53,184 @@
     <br>
 
     <main>
-        <h2><br>
-            Compre por Categoria</h2>
+
         <!--Criação de um Container para o "Compre por Categoria"-->
-        <div class = "container-categorias">
-            <!--Criação das Categorias-->
+        <div class="container-categorias">
+            <br>
+            <!-- Criação das Categorias -->
             <div class="item-feminino">
                 <br>
-                <img src="modelos/feminino.jpg"alt='Feminino'> 
-                <p>Feminino</p>
-            </div> 
-             
+                <img src="modelos/feminino.png" alt='Feminino'>
+            </div>
+
             <div class="item-masculino">
                 <br>
-                <img src="modelos/masculino.png"alt='Masculino'>
-                <p>Masculino</p>
+                <img src="modelos/masculino.png" alt='Masculino'>
             </div>
-               
+
             <div class="item-infantil">
                 <br>
-                <img src="modelos/infantil.jpg"alt='Infantil'>
-                <p>Infantil</p>
+                <img src="modelos/infantil.jpg" alt='Infantil'>
             </div>
 
             <div class="item-esportivo">
                 <br>
-                <img src="modelos/esportivo.png"alt='Esportivo'>
-                <p>Esportivo</p>
+                <img src="modelos/esportivo.png" alt='Esportivo'>
             </div>
-                    
+
             <div class="item-calcados">
                 <br>
-                <img src="modelos/calcados.png"alt='Calçados'>
-                <p>Calçados</p>
+                <img src="modelos/calcados.png" alt='Calçados'>
             </div>
-                    
+
             <div class="item-acessorios">
                 <br>
-                <img src="modelos/acessorios.jpg"alt='Acessórios'> 
-                <p>Acessórios</p>
-            </div> 
-             
+                <img src="modelos/acessorios.jpg" alt='Acessórios'>
+            </div>
+
             <div class="item-pets">
                 <br>
-                <img src="modelos/pets.png"alt='Pets'>
-                <p>Pets</p>
+                <img src="modelos/pets.png" alt='Pets'>
             </div>
-            
         </div>
 
+        </div>
 
-        <section id="Contato">
+        <br>
+
+
+        <!-- Criação de um Carrossel para os Destaques !-->
+        <title>Carrossel de Produtos</title>
+
+        <body>
+
+            <h2>Destaques</h2>
+            <hr>
+            <div class="carrossel-container">
+                <button onclick="moveLeft()">&#10094; Anterior</button>
+                <div class="carrossel" id="carrossel">
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/2.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/3.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/4.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/5.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                    <div class="itens">
+                        <img src="roupas/masculinas/1.jpg" alt="Camisa Estampada">
+                        <h3>Camisa Estampada</h3>
+                        <p>R$ 45,00</p>
+                    </div>
+                </div>
+                <button onclick="moveRight()">Próximo &#10095;</button>
+            </div>
+
+
+            <!-- Script para implementar a rolagem pelo botão-->
+            <script src="js/js.js"></script>
+
+            <section id=" Contato">
                 <h4>Contato</h4>
                 <p2>Email: contato@Outifit.com</p2>
                 <br>
                 <p2>Telefone: (81)94002-8922</p2>
 
-        </section>
-    
+            </section>
+
     </main>
-    
+
     <!--Criação do Rodapé-->
     <footer>
         <h4>© 2024 Loja de Roupas e Acessórios. Todos os direitos reservados.</h4>
     </footer>
-    
-</body>
 
+
+
+
+
+</body>
 
 </html>
