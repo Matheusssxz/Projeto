@@ -1,0 +1,11 @@
+boostrap 4.6
+jquery 3.5.1
+
+getbootstrap
+
+col-(lg,sd,sn)-4
+
+no boostrap possui 12 colunas
+
+tela do vendedor
+

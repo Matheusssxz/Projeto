@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins, sans-serif';
+}
+
+body {
+  background-color: #ffffff;
+  padding-top: 4rem;
+}
+
+
+.fundo {
+  display: flex!important;
+  flex-wrap: wrap !important;
+  justify-content: space-around !important;
+  padding: 10px !important;
+  align-items: center !important;
+  font-family: Arial, sans-serif !important;
+  min-height: 4rem !important;
+  background-color: #23b5d3 !important;
+  font-size: 1.5rem !important;
+  width: 100% !important;
+  position: fixed !important;
+  z-index: 10 !important;
+  top: 0 !important;
+}
+
+/*Tamanho da logo */
+nav img {
+  margin-left: 75px;
+  width: 150px;
+}
+
+nav ul li a {
+  color: black !important;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-item img {
+  height: 40px; /* Ajuste a altura conforme necessário */
+  width: auto; /* Mantém a proporção da imagem */
+  margin-right: 8px; /* Espaçamento à direita da imagem */
+  vertical-align: middle; /* Alinha a imagem verticalmente com o texto */
+  margin-right: 1;
+  margin-left: 0;
+}
+
+/* Alinhamento do texto dentro do link */
+.navbar-nav .nav-link {
+  display: flex; /* Usar flexbox para alinhar imagem e texto */
+  align-items: center; /* Alinha verticalmente no centro */
+  padding: 5px 15px;
+}
+
+/*Ajuste de padding para espaçamento */
+.navbar-nav .nav-link {
+  padding: 8px 12px; /* Ajuste conforme necessário */
+}
+
+/*Usando @media para aplicar estilos específicos com base nas características do dispositivo que acessa a pag WEB*/
+
+/* Espaçamento entre os itens "inicio,sobre nos..."*/
+@media (min-width: 992px) {
+  .navbar-nav .nav-item {
+    margin: 0 40px;
+  }
+}
+
+.search-box {
+  background-color: #f5f5f5;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #000000;
+  font-size: 16px;
+  line-height: 40px;
+  padding-right: 150px;
+}
+
+.search-btn {
+  display: inline-flex;
+  /* Permite que a imagem se alinhe bem */
+  align-items: center;
+  /* Centraliza verticalmente */
+  background-color: #f5f5f5;
+  /* Cor de fundo verde */
+  border-radius: 0 4px 4px 0;
+  /* Arredonda os cantos do lado direito */
+  padding: 0;
+  /* Remove o preenchimento */
+  border: none;
+  /* Remove a borda */
+  cursor: pointer;
+  /* Cursor de ponteiro ao passar por cima */
+}
+
+.search-btn img {
+  height: 20px;
+  /* Mantém a altura da imagem */
+  width: 20px;
+  /* Mantém a largura da imagem */
+  margin: 5px;
+  /* Adiciona margem para melhor espaçamento */
+}
+
+
+/* Centralizar a barra de pesquisa em telas pequenas quando o menu está expandido */
+@media (max-width: 991px) {
+
+  /* Aplica-se apenas em telas menores */
+  .navbar-collapse.show .search-box {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    /* Ajusta o espaço acima, se necessário */
+  }
+
+  .search-box input {
+    width: 80%;
+    /* Ajusta a largura da barra de pesquisa no estado centralizado */
+  }
+}
+
+
+/* Botões de Login e Cadastro*/
+.navbarlc {
+  display: flex;
+  justify-content: center; /* Centraliza os itens dentro da navbar */
+}
+
+.lc-collapse {
+  display: flex; /* Permite que os itens dentro da navbar se alinhem horizontalmente */
+  gap: 20px;
+}
+
+.btn {
+  margin-top: 5px; 
+  padding: .5rem !important;
+  border-radius: 15px !important;
+  font-size: .9rem !important;
+  font-weight: 600 !important;
+  background-color: black !important;
+  border: 1.3px solid #fff !important;
+  color: #ffffff !important;
+  cursor: pointer !important;
+  transition: 300ms !important;
+}
+
+.btn:hover{
+  transform: scale(1.1) !important;
+  background-color: #000000b2 !important;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 1280px) {
+  .navbar-collapse {
+    flex-direction: column; /* Coloca os itens em coluna */
+  }
+  .d-flex {
+    margin-top: 10px; /* Espaço entre o menu e os botões */
+  }
+}
+
+
+hr {
+  border: 0;
+  height: 5px;
+  background-color: #0000002c;
+  margin-top: 0;
+}
+
+h2{
+    display: flex !important;
+    margin-left: 10px;
+    margin-bottom: 1px;
+}
+/* Estilização do Catálogo*/
+.container {
+  max-width: 1200px; /* Largura máxima do contêiner */
+  margin: auto; /* Centraliza o contêiner */
+}
+
+.row {
+  justify-content: center; /* Centraliza as colunas dentro da linha */
+}
+
+.catalogo-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 0.5rem; /* Padding ajustado */
+  margin: 0.5rem; /* Margem ajustada */
+  border-radius: 10px;
+  background-color: #f8f9fa; /* Cor de fundo leve */
+  max-width: 250px; /* Limite para a largura dos itens */
+  width: 100%; /* Permite que o item ocupe 100% do espaço disponível, mas limitado ao max-width */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.catalogo-item:hover {
+  transform: scale(1.1); /* Aumenta a escala do item */
+}
+
+.catalogo-item img {
+  border: 1px solid #000000; /* Borda na imagem */
+  max-width: 100%; /* Limita a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Corta a imagem se necessário para preencher */
+  border-radius: 10px; /* Borda arredondada na imagem */
+}
+
+.catalogo-item h3 {
+  font-size: 1.2rem; /* Tamanho da fonte ajustado */
+  margin: 0.5rem 0; /* Margem acima e abaixo do título */
+}
+
+.catalogo-item p {
+  font-size: 1rem; /* Tamanho da fonte ajustado para o preço */
+  color: #000;
+}
+
+.row {
+  gap: 40px; /* Espaçamento entre os itens */
+}
+
+/* Botão LER MAIS*/
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+footer h4{
+  font-size: 18px;
+  align-items: center;
+}
